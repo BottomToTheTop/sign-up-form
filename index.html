@@ -8,9 +8,58 @@
 </head>
 <body>
     <div class="container">
-        <img src="halie-west-25xggax4bSA-unsplash.jpg" class="plant">
-        <div class="test">
+        <div class="img-container">
+            <img src="halie-west-25xggax4bSA-unsplash.jpg" class="plant">
+            <div class="logo-background">
+                <img src="odin-lined.png" class="odin-logo">
+                <div class="logo-text">ODIN</div>
+            </div>
         </div>
-    </div>
+        <div class="inner-container">
+            <div class="sign-up">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up now to get started.</p>
+                <p class="bottom">You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-container">
+                <p>Let's do this!</p>
+                <form id="sign-up">
+                    <div>
+                        <div>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" required/>
+                        </div>
+                        <div>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" required/>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" required/>
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" required/>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" minlength="8" required/>
+                            <div class="output"></div>
+                        </div>
+                        <div>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" minlength="8" class="confirm-password" required/>
+                            <div class="confirm-output"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button type="submit" form="sign-up">Create Account</button>
+        </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
